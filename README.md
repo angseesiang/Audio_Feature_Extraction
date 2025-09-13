@@ -37,13 +37,24 @@ git clone https://github.com/your-username/audio-feature-extractor.git
 cd audio-feature-extractor
 ```
 
-### 2. Install dependencies
+### 2. Create and activate a virtual environment (recommended)
+
+It is best practice to isolate project dependencies in a virtual
+environment.
+
+``` bash
+python -m venv venv
+source venv/bin/activate   # On Linux / macOS
+venv\Scripts\activate    # On Windows
+```
+
+### 3. Install dependencies
 
 ``` bash
 pip install -r requirements.txt
 ```
 
-### 3. Run the feature extractor
+### 4. Run the feature extractor
 
 ``` python
 from audio_feature_extractor import AudioFeatureExtractor
@@ -62,7 +73,7 @@ fig = extractor.generate_spectrogram(audio, title="Example Spectrogram")
 fig.show()
 ```
 
-### 4. Run tests
+### 5. Run tests
 
 ``` bash
 python -m unittest test_audio_feature_extractor.py
