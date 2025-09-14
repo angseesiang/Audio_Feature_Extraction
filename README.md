@@ -33,7 +33,7 @@ functionality.
 ### 1. Clone this repository
 
 ``` bash
-git clone https://github.com/your-username/audio-feature-extractor.git
+git clone https://github.com/angseesiang/audio-feature-extractor.git
 cd audio-feature-extractor
 ```
 
